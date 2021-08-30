@@ -1,0 +1,2 @@
+flask
+Adyen >= 5.1.0

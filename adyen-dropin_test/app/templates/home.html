@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class='main-container'>
+        <div class="info">
+            <h1>Welcome</h1>
+            <p>Implementing a dropin solution via adyen api`s.</p>
+            <p>
+                Make sure the payment method you want to use are enabled for your account.
+            </p>
+        </div>
+        <ul class="integration-list">
+            <li class="integration-list-item">
+                <a class="integration-list-item-link" href="{{ url_for('cart', integration="dropin") }}">
+                    <div class="title-container">
+                        <p class="integration-list-item-title">Drop-in</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
