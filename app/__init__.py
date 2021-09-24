@@ -57,7 +57,8 @@ def create_app():
     def checkout_error():
         return render_template('checkout-failed.html')
 
-    return app
+  #  return app
+    app.run()
 
 
 def page_not_found(error):
